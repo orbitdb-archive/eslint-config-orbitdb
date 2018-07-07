@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-orbitdb",
+  "version": "0.0.1",
+  "description": "eslint configuration for orbitdb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Delgado <thiagodelgado111@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagodelgado111/eslint-config-orbitdb"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "orbitdb"
+  ],
+  "bugs": {
+    "url": "https://github.com/thiagodelgado111/eslint-config-orbitdb/issues"
+  },
+  "homepage": "https://github.com/thiagodelgado111/eslint-config-orbitdb",
+  "peerDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
