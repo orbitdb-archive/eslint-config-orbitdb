@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiagodelgado111/eslint-config-orbitdb"
+    "url": "git+https://github.com/orbitdb/eslint-config-orbitdb.git"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -21,9 +21,9 @@
     "orbitdb"
   ],
   "bugs": {
-    "url": "https://github.com/thiagodelgado111/eslint-config-orbitdb/issues"
+    "url": "https://github.com/orbitdb/eslint-config-orbitdb/issues"
   },
-  "homepage": "https://github.com/thiagodelgado111/eslint-config-orbitdb",
+  "homepage": "https://github.com/orbitdb/eslint-config-orbitdb",
   "peerDependencies": {
     "eslint": "^5.2.0",
     "eslint-config-standard": "^11.0.0",
