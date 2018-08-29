@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-orbitdb",
+  "name": "@orbitdb/eslint-config-orbitdb",
   "version": "0.0.1",
   "description": "eslint configuration for orbitdb",
   "main": "index.js",
