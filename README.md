@@ -2,42 +2,38 @@
 
 The eslint configuration used for orbit-db projects
 
-## Installation
+## Using in your project
 
-Our default export contains all of our ESLint rules.
+Install [eslint](https://eslint.org), the [OrbitDB linting rules](https://github.com/orbitdb/eslint-config-orbitdb) and add them to your project's dev dependencies:
+```
+npm install eslint @orbitdb/eslint-config-orbitdb --save-dev
+```
 
-**Requirements**
+Create `.eslintrc` file in your project's root directory:
+```
+touch .eslintrc
+```
 
-* `eslint`
-* `eslint-plugin-import`
-* `eslint-plugin-standard`
-* `eslint-plugin-promise`
-* `eslint-plugin-node`
-* `eslint-config-standard`
+Edit `.eslintrc` to contain:
+```json
+{
+  "extends": ["@orbitdb/eslint-config-orbitdb"]
+}
+```
 
-If you use yarn, run `npm info "@orbitdb/eslint-config-orbitdb@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency. See below for npm instructions.
+Add a `lint` script to your project's `package.json`:
+```json
+"scripts": {
+  "lint": "./node_modules/eslint/bin/eslint.js src/"
+}
+```
 
-1. Install the correct versions of each package, which are listed by the command:
+*Note: The lint script needs to call "./node_modules/eslint/bin/eslint.js" instead of "eslint" as users may have global installation of eslint which uses *only* the plugins installed globally and will not find @orbitdb/eslint-config-orbitdb module (nor its dependencies). See more info [here](https://github.com/eslint/eslint/issues/6732) or [here](https://github.com/eslint/eslint/issues/1238).*
 
-  ```sh
-  npm info "@orbitdb/eslint-config-orbitdb@latest" peerDependencies
-  ```
-
-  Linux/OSX users can run:
-
-  ```sh
-  (
-    export PKG=@orbitdb/eslint-config-orbitdb;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG@latest"
-  )
-  ```
-
-
-2. Add `"extends": "@orbitdb/eslint-config-orbitdb"` to your .eslintrc
-
-## Details
-
-To setup `eslint` for a new project, please refer to the getting started page [here](https://eslint.org/docs/user-guide/getting-started#local-installation-and-usage), install it as a `devDependency`, pick a config file format (.eslintrc, YAML, json) and follow the rest of the instructions there :)
+Finally, to test it all works, run the linter:
+```
+npm run lint
+```
 
 ## Contribute
 
