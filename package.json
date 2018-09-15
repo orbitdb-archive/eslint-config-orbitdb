@@ -24,8 +24,7 @@
     "url": "https://github.com/orbitdb/eslint-config-orbitdb/issues"
   },
   "homepage": "https://github.com/orbitdb/eslint-config-orbitdb",
-  "peerDependencies": {
-    "eslint": "^5.2.0",
+  "devDependencies": {
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
